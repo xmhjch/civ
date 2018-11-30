@@ -501,10 +501,10 @@ $(window).on('resize scroll', function() {
   });
 
 
-  var p5Top = $('.p5').offset().top;
-  var p5H = $('.p5')[0].getBoundingClientRect().height;
+  var p5Top = $('.p5').offset().top+600;
+  var p5H = $('.p5')[0].getBoundingClientRect().height-1000;
   var p5Bottom = p5Top + p5H;
-  var linel = $('.p5')[0].getBoundingClientRect().height;
+
 
 
   var vTop = $(window).scrollTop();
@@ -513,9 +513,13 @@ $(window).on('resize scroll', function() {
 
   var vCenter = vTop + $(window).height()*0.5;
 
+  var sH = $('.tlscale')[0].getBoundingClientRect().height;
+
   if(vCenter<= p5Bottom && vCenter >= p5Top){
-    var dist = ((vCenter - p5Top)/linel)*vH;
+    var dist = ((vCenter - p5Top)/p5H)*vH;
+    var dist1 = (sH - vH)*((vCenter - p5Top)/p5H)
     $('.tlMove').css({transform:'translate(0,'+dist+'px)'});
+    $('.tlscale').css({transform:'translate(0,-'+dist1+'px)'});
   }
 
 });

@@ -585,6 +585,13 @@ body::-webkit-scrollbar{
 
 }
 
+.tlscale{
+	position: absolute;
+	right: 0%;
+	top: 0px;
+	width: 100px;
+}
+
 
 
 
@@ -624,7 +631,7 @@ body::-webkit-scrollbar{
 
 
 
-}
+
 
 .tech.grey{
 
