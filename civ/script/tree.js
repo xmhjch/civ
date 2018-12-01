@@ -25,7 +25,7 @@ jQuery(document).ready(function($) {
     orientation: "horizontal",
     class: "treeline2",
     paths: [
-      { start: "#p3down", end: "#MINING"},
+      { start: "#pp3", end: "#MINING"},
       { start: "#MINING", end: "#MASONRY"},
       {start: "#ARCHERY", end:"#THE_WHEEL"},
       {start: "#ANIMAL_HUSBANDRY", end:"#TRAPPING"},
@@ -149,7 +149,7 @@ jQuery(document).ready(function($) {
     orientation: "horizontal",
     class: "treeline1",
     paths: [
-    { start: "#p3down", end: "#MINING"},
+    { start: "#pp3", end: "#MINING"},
       { start: "#MINING", end: "#MASONRY"},
       {start: "#ARCHERY", end:"#THE_WHEEL"},
       {start: "#ANIMAL_HUSBANDRY", end:"#TRAPPING"},
@@ -269,6 +269,11 @@ jQuery(document).ready(function($) {
 
     ]
   });
+
+  if($("#svgContainer").isTouchScreen()){
+    $("#svgContainer").css({opacity:0.5});
+    $("#svgContainer2").css({opacity:0.2});
+  }
 
 });
 

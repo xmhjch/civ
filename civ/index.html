@@ -20,8 +20,53 @@
     <script type="text/javascript" src="lib/particles.js"></script>
 </head>
 <body>
+	<div class="p1">
+		<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
+		<div id="p1bg"></div>
+		<script type="text/javascript" src="script/psetting.js"></script>
+		<div class="p1text">
+			<div class="p1tt">Technology</div>
+			<div class="typewords"></div>
+		</div>>
+		
+		<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+		<script type="text/javascript" src="lib/typewrite.js"></script>
 
-	<div class="videoHolder">
+	</div>
+
+	<div class="p2">
+		<div class="videos">
+			<div class = "vholder rellax" id="v1" data-rellax-speed="2">
+				<video  muted loop preload="auto" class="bgVideo "   poster="res/img/civ-bg.jpg">
+		  			<source src="res/civ_bg1.mp4" type="video/mp4">
+				</video>
+			</div>
+			<div class = "vholder rellax"  id="v2" data-rellax-speed="-5">
+				<video muted loop preload="auto" class="bgVideo"   poster="res/img/civ-bg.jpg">
+		  			<source src="res/civ_bg1.mp4" type="video/mp4">
+				</video>
+			</div>
+			<div class = "vholder rellax"  id="v3" data-rellax-speed="5">
+				<video muted loop preload="auto" class="bgVideo"   poster="res/img/civ-bg.jpg">
+		  			<source src="res/civ_bg1.mp4" type="video/mp4">
+				</video>
+			</div>
+			
+
+		</div>
+
+
+		<div class="quotes rellax" data-rellax-speed="3">
+			<p class="quote quote1"> The brain is like a muscle. </p>
+			<p class="quote quote2"> When it is in use we feel very good. </p>
+			<p class="quote quote3"> Understanding is joyous. </p>
+			<p class="quote quote4"> - Carl Sagan - </p>
+			
+		</div>
+		
+	</div>
+
+	<!-- <div class="videoHolder">
 		<video autoplay muted loop preload="auto" class="bgVideo" poster="res/img/civ-bg.jpg">
 		  <source src="res/civ_bg1.mp4" type="video/mp4">
 		</video>
@@ -44,9 +89,9 @@
 
 		</svg>
 	</div>
-	<img class = "bgDown p1down" src="res/img/down.png">
+	<img class = "bgDown p1down" src="res/img/down.png"> -->
 
-	<div class="p2">
+	<!-- <div class="p2">
 		<div id="particles-js"></div>
 		<script type="text/javascript" src="script/psetting.js"></script>
 
@@ -87,34 +132,48 @@
 			<p class="quote quote4"> - Carl Sagan - </p>
 		</div>
 		<img class = "bgDown p2down" src="res/img/down.png">
-	</div>
+	</div> -->
 
-	<div class="p3" id="pp3">
+	<div class="p3">
 		<div class="intro">
 			<p class="introp ip1">Technology is one of the driving forces behind civilization. 
 				Advancing technology makes a civilization stronger, bigger, smarter and a much tougher opponent.
 				
 			</p>
-			<p class="introp ip2">The Tree of Technology displays a number of significant technologies and shows how they are intertwined. 
+			
+			<p class="introp ip2" id="pp3">The Tree of Technology displays a number of significant technologies and shows how they are intertwined. 
 				You can scroll to expand the tree and click on a tech to see more information about that particular tech.
 				
 			</p>
 
 
 		</div>
+		
+		<div id = "svgContainer2"></div>
+			<div id = "svgContainer" ></div>
 
 		
 		
 	</div>
 	<div class="p5">
 		
-		<div id = "svgContainer2"></div>
-		<div id = "svgContainer"></div>
+		
 
 		<script src="script/tree.js"></script>
 		<script src="script/text.js"></script>
 		<img class = "bgDown" id="p3down" src="res/img/down.png">
+		<div class="eras">
+			
+		</div>
 		<div class="techs">
+			<div class="r1 era rellax" data-rellax-speed="-2">ACIENT ERA</div>
+			<div class="r5 era rellax" data-rellax-speed="-2">CLASSICAL ERA</div>
+			<div class="r10 era rellax" data-rellax-speed="-2">MEDIEVAL ERA</div>
+			<div class="r15 era rellax" data-rellax-speed="-2">RENAISSANCE ERA</div>
+			<div class="r19 era rellax" data-rellax-speed="-2">INDUSTRIAL ERA</div>
+			<div class="r25 era rellax" data-rellax-speed="-2">MODERN ERA</div>
+			<div class="r29 era rellax" data-rellax-speed="-2">ATOMIC ERA</div>
+			<div class="r33 era rellax" data-rellax-speed="-2">INFORMATION ERA</div>
 			<div id = "MINING" class = "tech c1 r1">
 				<img class="techimg" src="res/img/tech/TECH_MINING.png">
 				<div class="techcaption">MINING</div>
@@ -446,6 +505,7 @@
 			</div>
 
 
+
 			
 
 
@@ -464,8 +524,8 @@
 		</div>
 		<div class="timeline">
 			<img class = "tll" src="res/img/line11.png">
-			<img class = "tlscale" src="res/img/scale.png">
-			<img class = "tlMove" src="res/img/line22.png">
+			<img class = "tlscale" src="res/img/scale1.png">
+			<img class = "tlMove" src="res/img/arrow.png">
 		</div>
 
 		
@@ -477,6 +537,10 @@
 	<div>
 		
 	</div>
+	<script type="text/javascript" src="lib/rellax.min.js"></script>
+	<script>
+	  var rellax = new Rellax('.rellax');
+	</script>
 
 
 
