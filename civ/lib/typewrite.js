@@ -1,6 +1,6 @@
 
 
-
+// the list of strings for typing animations
 var techlist = [
 	"Mining – 43000 BC",
 	"Pottery – 18000 BC",

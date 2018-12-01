@@ -2,7 +2,7 @@
 
 
 
-
+// all the detailed information for techs
 $(this).attr('id')
 
 
@@ -1577,6 +1577,10 @@ $(document).on("click", ".tech", function(){
 					"The oldest mine yet discovered was found in Swaziland, Africa. It was dug some 40,000 years ago to mine ochre, a mineral used in burial ceremonies and for body art. Flint, a brittle and easily-sharpened mineral used by early man for scrapers, knives and arrowheads may have been the first item mined on a large scale in Europe. Flint mine shafts some 100 feet deep and dating back to the Neolithic Period (8000 - 2000 BC) have been discovered in France and England."
 					+ '</div>';
 	}
+
+
+
+	// prepare the variables for later insertion into the page
 	$( '.techimgD' ).replaceWith(img);
 	$('.titleD').replaceWith(title);
 	$('.timeD').replaceWith(time);
@@ -1597,6 +1601,7 @@ $(document).on("click", ".tech", function(){
 });
 
 
+// open and update the popup page 
 $(document).on("click", ".xD", function(){
 	$('body').removeClass("stopScroll");
 	$('.techDetail').animate({ opacity: 0}, 400);

@@ -13,6 +13,7 @@ a{
 	color: #FFFFFF;
 }
 
+/*class that assists with scrolling of whole page*/
 body.stopScroll{
 	overflow: hidden;
 }
@@ -21,13 +22,15 @@ body.showScroll{
 	overflow: visible;
 }
 
-
-
+/*
+hide scrollbar on the right for better viewing effect*/
 body::-webkit-scrollbar{
 	display: none;
 }
 
 
+
+/*first part of page*/
 .p1{
 	position: absolute;
 	width: 100%;
@@ -37,6 +40,7 @@ body::-webkit-scrollbar{
 	background-color: #17182f;
 }
 
+/*page ground of p1*/
 #p1bg{
 	position: fixed;
 	width: 2000px;
@@ -46,6 +50,8 @@ body::-webkit-scrollbar{
 	left:0%;
 }
 
+
+/*all text on p1*/
 .p1text{
 	width: 100%;
 	position: absolute;
@@ -61,6 +67,8 @@ body::-webkit-scrollbar{
   	opacity: 0;
 }
 
+
+/*title of the page*/
 .p1tt{
 
 	font-family: Raleway;
@@ -76,13 +84,14 @@ body::-webkit-scrollbar{
 
 }
 
+/*animation effect of text on p1*/
 .p1t_ani{
 	transform: translateY(0px);
 	opacity: 1;
 }
 
 
-
+/*typing animation origin words*/
 .typewords{
 	display: inline;
 	width: 100%;
@@ -96,6 +105,7 @@ body::-webkit-scrollbar{
 	
 }
 
+/*the flashing cursor*/
 .typed-cursor{
 	font-family: Raleway;
 	font-weight: 300;
@@ -111,17 +121,8 @@ body::-webkit-scrollbar{
 
 
 
-/*.videoHolder{
-	width: 100%;
-	height: 99.99%;
-	position: absolute;
-	overflow: hidden;
 
-	
-
-}*/
-
-
+/*the second part of the page*/
 .p2{
 	position: absolute;
 	width: 100%;
@@ -133,6 +134,7 @@ body::-webkit-scrollbar{
 
 }
 
+/*background video*/
 .bgVideo {
 
 	min-width: 100%;
@@ -144,6 +146,8 @@ body::-webkit-scrollbar{
 
 }
 
+/*the wrapper around video*/
+
 .vholder{
 	position: absolute;
 	left: 0%;
@@ -151,6 +155,8 @@ body::-webkit-scrollbar{
 	width: 100%;
 	height: 100%;
 }
+
+/*three wrappers in total*/
 
 #v1{
 	top:10%;
@@ -174,106 +180,9 @@ body::-webkit-scrollbar{
 
 }
 
-.overlayTitle{
-	display: inline-block;
-
-	white-space:nowrap;
-	width: 100%;
-	height: 38%;
-	margin-left: -50%;
-	position: absolute;
-	top: 30%;
-	left: 50%;
-
-}
-
-
-.titletext{
-	font-family: Raleway;
-	font-weight: 600;
-	color: #FFFFFF;
-	letter-spacing: 6.4px;
-	text-align: center;
-	text-shadow: 0 2px 4px rgba(0,0,0,0.50);
-	position: absolute;
-	width: 100%;
-
-}
-
-.tt1{
-	font-size: 6vw; 
-	letter-spacing: 10px;
-	top:calc(50% - 6vw);
-}
-
-.tt2{
-	font-size: 3vw;
-	top:calc(50% + 1vw);
-}
-
-.overlayBG{
-	background-image: linear-gradient(-180deg, #2B2B2B 0%, #525252 100%);
-	box-shadow: 0 2px 7px 1px rgba(0,0,0,0.50);
-	border-radius: 20px;
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	top: 0%;
-	left: 0%;
 
 
 
-	opacity: 0;
-}
-
-
-.svgContainer{
-	width: 100%;
-	height: calc(45% + 6vw);
-	overflow: hidden;
-	position: absolute;
-	top:calc(55% - 6vw);
-	
-}
-.bglines{
-	position: absolute;
-	margin-left: -34%;
-	left: 50%;
-	width: 68%;
-	top:0%；
-
-}
-.bgline{
-	fill:none;
-	stroke:#ffffff;
-	stroke-linecap:square;
-	stroke-miterlimit:10;
-	stroke-width:1.5%;
-	pointer-events:all;
-	opacity: 0.5;
-	position: absolute;
-
-}
-
-/*.bgline.prepare1{
-	transition-property: stroke-width, opacity;
-    transition-duration: 0.5s;
-    transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    transition-delay: 0s;
-}
-
-.bgline.prepare2{
-	transition-property: stroke-width, opacity;
-    transition-duration: 0.3s;
-    transition-timing-function: linear;
-    transition-delay: 0s;
-}
-
-.bgline.ani1{
-	stroke-width: 2.6%;
-	opacity: 1;
-}
-*/
 
 
 .bgline.bglineAnimate{
@@ -325,101 +234,7 @@ body::-webkit-scrollbar{
 }
 
 
-.bgDown{
-	position: absolute;
-	bottom: 5%;
-	width: 12%;
-	margin-left: -6%;
-	left: 50%;
-
-
-}
-
-.p1down{
-	opacity: 0.0;
-	transition: opacity 1s linear 2s;
-}
-
-.p1down.ready{
-	opacity: 1;
-}
-
-
-
-
-
-@keyframes bgDownAnim{
-	from {
-    	stroke-dashoffset: 60%;
-	}
-	to {
-		stroke-dashoffset: 0;
-	}
-}
-
-/*.p2{
-	position: absolute;
-	width: 100%;
-	height: 100%;
-
-	top: 100%;
-	overflow: hidden;
-
-	display: hidden;
-}*/
-
-
-#particles-js{
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	top:0%;
-	background: #1A1A1A;
-
-	filter: brightness(60%) blur(10px);
-	transition: filter 3s linear 0s;
-}
-
-.p2linesUpper{
-	position: absolute;
-	bottom: 63%;
-	min-height: 60%;
-	margin-left: -13.55%;
-	left: 50%;
-	width: 27.1%;
-
-	opacity: 0.0;
-	
-}
-
-.p2linesLower{
-	position: absolute;
-	margin-left: -3%;
-	min-height: 48%;
-	left: 50%;
-	width: 6%;
-	top:60%;
-	opacity: 0.0;
-
-	
-}
-
-.p2line{
-	fill:none;
-	stroke:#ffffff;
-	stroke-linecap:square;
-	stroke-miterlimit:10;
-	stroke-width:5.5%;
-	pointer-events:all;
-	opacity: 1;
-	position: absolute;
-	
-}
-
-
-
-
-
+/*quotes that overlays video*/
 
 .quotes{
 	position: absolute;
@@ -450,42 +265,7 @@ body::-webkit-scrollbar{
   
 }
 
-.quote1{
-/*	width: 29vw;*/
-
-  
-}
-
-.quote2{
-/*	width: 40.3vw;*/
-
-  
-}
-.quote3{
-/*	width: 27.8vw;*/
-
-}
-.quote4{
-/*	width: 15.7vw;*/
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-.p2down{
-	opacity: 0;
-	transition: opacity 1.25s linear 0s;
-}
+/*third part of the page*/
 
 
 .p3{
@@ -499,8 +279,8 @@ body::-webkit-scrollbar{
 }
 
 
-
-
+/*
+the large intro div*/
 .intro{
 	width: 700px;
 	margin-left: -350px;
@@ -513,6 +293,7 @@ body::-webkit-scrollbar{
 
 }
 
+/*the text inside intro div*/
 .introp{
 	display:inline-block;
 	font-family: Raleway;
@@ -532,10 +313,13 @@ body::-webkit-scrollbar{
 	opacity: 0;
 }
 
+/*animation for intro text*/
 .iplight{
 	opacity: 1;
 }
 
+
+/*the fourth part of page*/
 .p5{
 	width: 100%;
 	top:250%;
@@ -546,6 +330,7 @@ body::-webkit-scrollbar{
 	transition: background 0.3s linear 0s;
 }
 
+/*the ovelay effect of bg*/
 .p5.dark{
 	background: #161616;
 }
@@ -554,6 +339,8 @@ body::-webkit-scrollbar{
 	top:0%;
 }
 
+
+/*the detail popup*/
 .techDetail{
 	background-image: linear-gradient(-180deg, #232323 36%, #303030 98%);
 	box-shadow: 0 2px 78px 14px rgba(0,0,0,0.50);
@@ -572,6 +359,8 @@ body::-webkit-scrollbar{
 
 
 }
+
+/*text detail within the popup*/
 
 .textD{
 	position: absolute;
@@ -627,6 +416,8 @@ body::-webkit-scrollbar{
 }
 
 
+/*the image for gradient effect*/
+
 .coverb1{
 	position: fixed;
 	width: 100%;
@@ -637,6 +428,8 @@ body::-webkit-scrollbar{
 }
 
 
+
+/*timeline on the right*/
 .timeline{
 	position: fixed;
 	right: 0%;
@@ -672,6 +465,9 @@ body::-webkit-scrollbar{
 	width: 80px;
 }
 
+
+/*the underlying era text*/
+
 .era{
 	position: absolute;
 	font-family: Raleway;
@@ -690,7 +486,7 @@ body::-webkit-scrollbar{
 
 
 
-
+/*the containers for all tech*/
 .techs{
 	top:300px;
 	width: 920px;
@@ -702,12 +498,14 @@ body::-webkit-scrollbar{
 
 	
 }
-
+/*
+when tech is blocked*/
 .techs.dark{
 	filter:brightness(95%) blur(3px);
 }
 
 
+/*class for each tech*/
 .tech{
 	width: 200px;
 	height: 240px;
@@ -725,18 +523,20 @@ body::-webkit-scrollbar{
 
 
 
-
+/*when tech has not show up*/
 .tech.grey{
 
 	filter:grayscale(100%) brightness(100%) contrast(65%);
 }
 
+/*when tech enter center of screen*/
 .tech.light{
 
 	filter:grayscale(0%) brightness(100%) contrast(100%);
 
 }
 
+/*icon animation*/
 .techimg.light{
 	animation: imglight 1.5s;
 	filter:brightness(100%) ;
@@ -783,12 +583,8 @@ body::-webkit-scrollbar{
 
 
 
-.techimg.grey{
 
-
-}
-
-
+/*caption effect*/
 .techcaption{
 	display:inline-block;
 	font-family: Raleway;
@@ -817,6 +613,9 @@ body::-webkit-scrollbar{
 .techcaption.light{
 	opacity: 1;
 }
+
+
+/*settings for the lines*/
 
 #svgContainer2 {
       
@@ -857,6 +656,9 @@ body::-webkit-scrollbar{
 
   	
 }
+
+
+/*the grid for the icons*/
 
 .c1{
 	left:0px;
@@ -1054,7 +856,7 @@ body::-webkit-scrollbar{
 
 
 
-/*making it responsive*/
+/*making it responsive - screen between 1024 and 720px*/
 @media screen and (max-width: 1024px) {
 
 
@@ -1269,6 +1071,9 @@ body::-webkit-scrollbar{
 
 
 }
+
+
+/*making it responsive - screen under 720 px*/
 
 @media screen and (max-width: 720px) {
 

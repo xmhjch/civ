@@ -20,6 +20,8 @@
     <script type="text/javascript" src="lib/particles.js"></script>
 </head>
 <body>
+
+	<!-- the first part of the website, with a particle background, title, and typing animation -->
 	<div class="p1">
 		<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
 		<div id="p1bg"></div>
@@ -34,6 +36,7 @@
 
 	</div>
 
+<!-- 	the second part of the page. This would include a video, seperated into three screens that each have different speed when scroll pass  -->
 	<div class="p2">
 		<div class="videos">
 			<div class = "vholder rellax" id="v1" data-rellax-speed="2">
@@ -55,7 +58,7 @@
 
 		</div>
 
-
+		<!-- Overlaying the video will be a quote -->
 		<div class="quotes rellax" data-rellax-speed="3">
 			<p class="quote quote1"> The brain is like a muscle. </p>
 			<p class="quote quote2"> When it is in use we feel very good. </p>
@@ -66,74 +69,8 @@
 		
 	</div>
 
-	<!-- <div class="videoHolder">
-		<video autoplay muted loop preload="auto" class="bgVideo" poster="res/img/civ-bg.jpg">
-		  <source src="res/civ_bg1.mp4" type="video/mp4">
-		</video>
-	</div>
-	<div class = "overlayTitle">
-		<div class="overlayBG"></div>
-		<div class="titletext tt1">THE TREE</div>
-		<div class="titletext tt2">OF TECHNOLOGY</div>
-	</div>
-		<div class="svgContainer">
-		<svg class = "bglines" xmlns="http://www.w3.org/2000/svg" viewBox="-20 0 351.59 657.46">
-			<line class="bgline" x1="163" y1="55.83" x2="163" y2="655.46"/>
-			<line class="bgline" x1="148.55" y1="55.83" x2="148.55" y2="655.46"/>
-			<polyline class="bgline" points="281.41 2 281.41 55.83 177.45 55.83 177.45 655.46"/>
-			<polyline class="bgline" points="295.59 15.13 295.59 69.83 191.62 69.83 191.62 655.46"/>
-			<polyline class="bgline" points="309.59 30.13 309.59 84.83 205.62 84.83 205.62 655.46"/>
-			<polyline class="bgline" points="30.18 2 30.18 55.83 134.14 55.83 134.14 655.46"/>
-			<polyline class="bgline" points="16 15.13 16 69.83 119.96 69.83 119.96 655.46"/>
-			<polyline class="bgline" points="2 30.13 2 84.83 105.96 84.83 105.96 655.46"/>
 
-		</svg>
-	</div>
-	<img class = "bgDown p1down" src="res/img/down.png"> -->
-
-	<!-- <div class="p2">
-		<div id="particles-js"></div>
-		<script type="text/javascript" src="script/psetting.js"></script>
-
-		<svg class = "p2linesUpper" xmlns="http://www.w3.org/2000/svg" viewBox="-20 0 140.66 141">
-			<line class="p2line" x1="100.16" y1="0.5" x2="100.16" y2="40.5"/>
-			<line class="p2line" x1="0.5" y1="0.5" x2="0.5" y2="40.5"/>
-			<line class="p2line" x1="57.54" y1="100.5" x2="43.09" y2="100.5"/>
-			<line class="p2line" x1="57.54" y1="80.5" x2="57.54" y2="100.5"/>
-			<line class="p2line" x1="57.54" y1="0.5" x2="57.54" y2="80.5"/>
-			<line class="p2line" x1="43.09" y1="80.5" x2="43.09" y2="100.5"/>
-			<line class="p2line" x1="43.09" y1="80.5" x2="43.09" y2="0.5"/>
-			<line class="p2line" x1="71.98" y1="60.5" x2="71.98" y2="80.5"/>
-			<line class="p2line" x1="71.98" y1="0.5" x2="71.98" y2="60.5"/>
-			<line class="p2line" x1="86.16" y1="0.5" x2="86.16" y2="40.5"/>
-			<line class="p2line" x1="86.16" y1="40.5" x2="86.16" y2="60.5"/>
-			<line class="p2line" x1="28.68" y1="60.5" x2="28.68" y2="0.5"/>
-			<line class="p2line" x1="28.68" y1="60.5" x2="28.68" y2="80.5"/>
-			<line class="p2line" x1="14.5" y1="40.5" x2="14.5" y2="0.5"/>
-			<line class="p2line" x1="14.5" y1="40.5" x2="14.5" y2="60.5"/>
-			<line class="p2line" x1="86.16" y1="60.5" x2="71.98" y2="60.5"/>
-			<line class="p2line" x1="14.5" y1="40.5" x2="0.5" y2="40.5"/>
-			<line class="p2line" x1="43.09" y1="80.5" x2="28.68" y2="80.5"/>
-			<line class="p2line" x1="28.68" y1="60.5" x2="14.5" y2="60.5"/>
-			<line class="p2line" x1="71.98" y1="80.5" x2="57.54" y2="80.5"/>
-			<line class="p2line" x1="100.16" y1="40.5" x2="86.16" y2="40.5"/>
-		</svg>
-		<svg class = "p2linesLower" xmlns="http://www.w3.org/2000/svg" viewBox="0 -40 29.89 192.27">
-			<line class="p2line" x1="22.17" y1="0.5" x2="22.17" y2="191.77"/>
-			<line class="p2line" x1="7.72" y1="191.77" x2="7.72" y2="0.5"/>
-			<line class="p2line" x1="22.17" y1="0.5" x2="7.72" y2="0.5"/>
-			<line class="p2line" x1="29.39" y1="0.5" x2="14.95" y2="0.5"/>
-			<line class="p2line" x1="14.95" y1="0.5" x2="0.5" y2="0.5"/>
-		</svg>
-		<div class="quotes">
-			<p class="quote quote1"> The brain is like a muscle. </p>
-			<p class="quote quote2"> When it is in use we feel very good. </p>
-			<p class="quote quote3"> Understanding is joyous. </p>
-			<p class="quote quote4"> - Carl Sagan - </p>
-		</div>
-		<img class = "bgDown p2down" src="res/img/down.png">
-	</div> -->
-
+<!-- 	the third part of the page. This would include the main intro information of the page, which will lead to the tree -->
 	<div class="p3">
 		<div class="intro">
 			<p class="introp ip1">Technology is one of the driving forces behind civilization. 
@@ -149,11 +86,13 @@
 
 		</div>
 		
+<!-- 		svgcontainers that contains the lines generated between elements -->
 		<div id = "svgContainer2"></div>
 			<div id = "svgContainer" ></div>
 
 		
 		
+		<!-- the fourth part of the page. this is the main part of the whole page since it includes icons, lines and most information -->
 	</div>
 	<div class="p5">
 		
@@ -165,6 +104,7 @@
 		<div class="eras">
 			
 		</div>
+<!-- 		the background text which indicates the era of technologies -->
 		<div class="techs">
 			<div class="r1 era rellax" data-rellax-speed="-2">ACIENT ERA</div>
 			<div class="r5 era rellax" data-rellax-speed="-2">CLASSICAL ERA</div>
@@ -174,6 +114,8 @@
 			<div class="r25 era rellax" data-rellax-speed="-2">MODERN ERA</div>
 			<div class="r29 era rellax" data-rellax-speed="-2">ATOMIC ERA</div>
 			<div class="r33 era rellax" data-rellax-speed="-2">INFORMATION ERA</div>
+
+			<!-- each tech has its own id, icon and text -->
 			<div id = "MINING" class = "tech c1 r1">
 				<img class="techimg" src="res/img/tech/TECH_MINING.png">
 				<div class="techcaption">MINING</div>
@@ -510,12 +452,17 @@
 
 
 		</div>
+		<!-- an image serves for the gradient effect at bottom of page -->
 		<img class = "coverb1" src="res/img/bg-gradient.png">
+
+		<!-- time line on the right  -->
 		<div class="timeline">
 			<img class = "tll" src="res/img/line11.png">
 			<img class = "tlscale" src="res/img/scale1.png">
 			<img class = "tlMove" src="res/img/arrow.png">
 		</div>
+
+		<!-- detail page that will be filled up when one tech is clicked -->
 		<div class="techDetail">
 			<img class="techimgD">
 			<img class="xD" src="res/img/x.png">

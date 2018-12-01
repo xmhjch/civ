@@ -1,25 +1,4 @@
-// $(document).ready(function() {
-//   $("#svgContainer").HTMLSVGconnect({
-//     paths: [
-//       { start: "#MINING", end: "#MASONRY", orientation: "vertical", class: "treeline1" }
-//     ]
-//   });
-// });
-
-
-
-// var newPaths = [
-//   { start: "#MINING", end: "#MASONRY", orientation: "vertical", class: "treeline1" }
-//  ];
-
-
-// $(document).ready(function(){
-// 	$("#svgContainer").HTMLSVGconnect("addPaths", newPaths);
-// });
-
-      //{start: "#", end:"#"},
-
-
+// draw out the connections between elements
 jQuery(document).ready(function($) {
 	$("#svgContainer2").HTMLSVGconnect({
     orientation: "horizontal",
@@ -278,6 +257,8 @@ jQuery(document).ready(function($) {
 });
 
 
+
+// decide whether item is in screen and fits specific criteria
 $.fn.isInView = function() {
   var elementTop = $(this).offset().top;
   var elementBottom = elementTop + $(this).outerHeight();
@@ -369,6 +350,8 @@ $.fn.isTooFar = function(){
   	return elementTop > viewportBottom;
 }
 
+
+// finding at the given horizontal line, how long should the svg line be
 $.fn.findL = function(y){
 	var linel = $(this)[0].getTotalLength();
 	var l = linel/2;
@@ -421,6 +404,8 @@ $.fn.findL = function(y){
 
 
 $(window).on('resize scroll', function() {
+
+  // update the icon animations
   $('.tech').each(function() {
       var id = $(this).attr('id');
 
@@ -447,6 +432,7 @@ $(window).on('resize scroll', function() {
     
   });
 
+  // update the tree animations
   $('.treeline1').each(function(){
 
   	if($(this).attr('class').split(' ').includes('scrolled') || $(this).isTooFar()){
