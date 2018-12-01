@@ -323,7 +323,7 @@ $(window).on('scroll resize', function(){
   		
   	}
 
-  	if(p5top < viewportTop){
+  	if(p5top < viewportBottom - $(window).height()*0.5){
   		$('.timeline').addClass('light');
 
     	$("#svgContainer").css({opacity:0.5});

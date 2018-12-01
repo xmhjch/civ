@@ -519,7 +519,7 @@ body::-webkit-scrollbar{
 	font-weight: 300;
 	color: #FFFFFF;
 	letter-spacing: 0px;
-	font-size: 25px;
+	font-size: 30px;
 	text-align: center;
 	transition: opacity 1s linear;
 }
@@ -824,6 +824,7 @@ body::-webkit-scrollbar{
     opacity: 0.0;
     width: 100%;
     height: 100%;
+    transition: opacity 1s linear;
 }
 
 #svgContainer {
@@ -832,6 +833,7 @@ body::-webkit-scrollbar{
     opacity: 0.0;
     width: 100%;
     height: 100%;
+    transition: opacity 1s linear;
 
 }
 
@@ -1055,101 +1057,29 @@ body::-webkit-scrollbar{
 /*making it responsive*/
 @media screen and (max-width: 1024px) {
 
-	.tt1{
-		font-size: 8vw; 
-		top:calc(50% - 8vw);
-	}
-
-	.tt2{
-		font-size: 4vw;
-		top:calc(50% + 1vw);
-	}
-
-    
-
-    .svgContainer{
-		height: calc(45% + 6vw);
-		top:calc(55% - 6vw);
-		
-	}
-	.bglines{
-		margin-left: -40.8%;
-		width: 81.6%;
-
-	}
-	.bgDown{
-		width: 15%;
-		margin-left: -7.5%;
-	}
-
-	.p2linesUpper{
-		margin-left: -16.26%;
-		width: 32.52%;
-
-		
-	}
-
-	.p2linesLower{
-		margin-left: -3.6%;
-		width: 7.2%;	
-	}
 
 	.quote{
-    	font-size: 4vw;
+    	font-size: 40px;
+    }
+    .p5{
+    	height: calc(49*220px);
     }
 
-    @keyframes typewriterA{
-  		from{width: 0;}
-  		to{width: 48vw;}
-	}
-
-	@keyframes typewriterB{
-  		from{width: 0;}
-  		to{width: 64.8vw;}
-	}
-	@keyframes typewriterC{
-  		from{width: 0;}
-  		to{width: 44.8vw;}
-	}
-	@keyframes typewriterD{
-  		from{width: 0;}
-  		to{width: 25.6vw;}
-	}
-	.quote1{
-	/*	width: 29vw;*/
-	    top: 0%;  
-	    margin-left: -24vw;
-	  
-	}
-
-	.quote2{
-	/*	width: 40.3vw;*/
-	    top: 5vw;  
-	    margin-left: -32.4vw;
-	  
-	}
-	.quote3{
-	/*	width: 27.8vw;*/
-	    top: 10vw;  
-	    margin-left: -22.4vw;
-	}
-	.quote4{
-	/*	width: 15.7vw;*/
-	    top: 16vw;  
-	    margin-left: -12.8vw;
-	}
-
-	.techs{
-		width: 650px;
-		margin-left: -325px;
-		
-	}
-
-
+    .techs{
+    	width: 700px;
+    	margin-left: -350px;
+    }
 	.tech{
 		width: 140px;
 		height: 160px;
 
+
+	}
+
+	.techDetail{
+		
+		width: 700px;
+		margin-left: -350px;
 	}
 	.techcaption{
 		letter-spacing: 3px;
@@ -1342,90 +1272,88 @@ body::-webkit-scrollbar{
 
 @media screen and (max-width: 720px) {
 
-	.tt1{
-		font-size: 10vw; 
-		top:calc(50% - 10vw);
-	}
-
-	.tt2{
-		font-size: 5vw;
-		top:calc(50% + 1vw);
-	}
-
-    
-
-    .svgContainer{
-		height: calc(45% + 6vw);
-		top:calc(55% - 6vw);
-		
-	}
-	.bglines{
-		margin-left: -51%;
-		width: 102%;
-
-	}
-	.bgDown{
-		width: 18.75%;
-		margin-left: -9.375%;
-	}
-
-	.p2linesUpper{
-		margin-left: -20.325%;
-		width: 40.65%;
-
-		
-	}
-
-	.p2linesLower{
-		margin-left: -4.5%;
-		width: 9%;	
-	}
-
-
-
-    .quote{
-    	font-size: 5vw;
+	.quote{
+    	font-size: 20px;
     }
-    @keyframes typewriterA{
-  		from{width: 0;}
-  		to{width: 60vw;}
+    .p5{
+    	height: calc(55*105px);
+    }
+    .intro{
+    	width: 320px;
+    	height: 100%;
+    	margin-left: -160px;
+    }
+    .introp{
+    	font-size: 20px;
+    }
+    .p1tt{
+    	font-size: 50px;
+    }
+
+    .techDetail{
+		
+		width: 95%;
+		margin-left: -47.5%;
+	}
+	.techimgD{
+		width: 120px;
+		position: absolute;
+		top:10px;
+	}
+	.textD{
+		position: absolute;
+		left:10px;
+		top:135px;
+		margin-right: 10px;
 	}
 
-	@keyframes typewriterB{
-  		from{width: 0;}
-  		to{width: 81vw;}
-	}
-	@keyframes typewriterC{
-  		from{width: 0;}
-  		to{width: 56vw;}
-	}
-	@keyframes typewriterD{
-  		from{width: 0;}
-  		to{width: 32vw;}
-	}
-	.quote1{
-	/*	width: 29vw;*/
-	    top: 0%;  
-	    margin-left: -30vw;
-	  
+	.xD{
+		position: absolute;
+		right: 10px;
+		top:20px;
+		max-width: 33px;
 	}
 
-	.quote2{
-	/*	width: 40.3vw;*/
-	    top: 6vw;  
-	    margin-left: -40.5vw;
-	  
+	.titleD{
+		display:block;
+		font-family: Raleway;
+		font-weight: 300;
+		color: #FFFFFF;
+		letter-spacing: 10px;
+		font-size: 35px;
+		margin-bottom: 10px;
+
 	}
-	.quote3{
-	/*	width: 27.8vw;*/
-	    top: 12vw;  
-	    margin-left: -28vw;
+	.timeD{
+		display:block;
+		font-family: Raleway;
+		font-weight: 400;
+		color: #FFFFFF;
+		letter-spacing: 5px;
+		font-size: 22px;
+		margin-bottom: 10px;
 	}
-	.quote4{
-	/*	width: 15.7vw;*/
-	    top: 19vw;  
-	    margin-left: -16vw;
+
+	.quoteD{
+		display:block;
+		font-family: Raleway;
+		font-weight: 300;
+		font-style: italic;
+		color: #FFFFFF;
+		font-size: 22px;
+		margin-bottom: 10px;
 	}
+	.detailD{
+		display:block;
+		font-family: Raleway;
+		font-weight: 300;
+		color: #FFFFFF;
+		font-size: 16px;
+		line-height: 22px;
+
+	}
+
+
 
 
 	.techs{
